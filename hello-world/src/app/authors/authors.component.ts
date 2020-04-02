@@ -1,4 +1,5 @@
 import { Component } from '@angular/core';
+import { AuthorsService } from '../authors.service'
 
 @Component({
   selector: 'authors',
@@ -7,7 +8,7 @@ import { Component } from '@angular/core';
 })
 export class AuthorsComponent {
 
-  constructor() { }
+  constructor(service: AuthorsService) { }
 
 
 }
