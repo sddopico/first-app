@@ -6,9 +6,14 @@ import { AuthorsService } from '../authors.service'
   templateUrl: './authors.component.html',
   styleUrls: ['./authors.component.css']
 })
-export class AuthorsComponent {
 
-  constructor(service: AuthorsService) { }
+export class AuthorsComponent {
+  title = '3 Authors';
+  authors;
+
+  constructor(service: AuthorsService) {
+    this.authors = service.getAuthors();
+  }
 
 
 }
