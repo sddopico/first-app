@@ -8,12 +8,10 @@ import { AuthorsService } from '../authors.service'
 })
 
 export class AuthorsComponent {
-  title = '3 Authors';
   authors;
 
   constructor(service: AuthorsService) {
     this.authors = service.getAuthors();
   }
-
 
 }
